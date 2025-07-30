@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+main {
+  width:50%;
+  margin-top: 3em;
+}
+
+/* Cursor avec lumiere */
+.spotlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 300px at var(--x, 50%) var(--y, 50%),
+    rgba(255, 255, 255, 0.03),
+    rgba(0, 0, 0, 0)
+  );
+  transition: background-position 0.01s;
+}
+
+/* HEADER FIXED */
+.presentation {
+  height: 90vh;
+  position: fixed;
+  top: 5%;
+  left: 2%;
+  width: 35%;
+}
+.presentation h1 {
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.presentation h2 {
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+.presentation p {
+  margin-bottom: 1em;
+}
+
+.container {
+  background-color: #111010;
+}
+.container-interne {
+  margin-right: 10%;
+}
+#profil{
+    width: 40%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.img-langage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  width: 80%;
+}
+.img-langage img {
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 10px;
+  margin: 1em 0;
+}
+
+.img-langage img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.link-important{
+  display: flex;
+  justify-content: flex-end;
+  gap: 3%;
+}
+
+/* PART RIGHT */
+
+/* ligne central */
+
+.ligne {
+  border: solid 1px;
+  left: 33%;
+  top: 5%;
+  height: 90vh;
+  position: fixed;
+}
+
+/* Description lorenzo */
+
+.description p {
+  line-height: 2em;
+  margin-bottom: 2em;
+  text-align: justify;
+}
+
+.description p b {
+  font-weight: bold;
+}
+
+/* Experience */
+
+#experience {
+  margin-top: 7em;
+  font-weight: bold;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4em;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.experience:hover {
+  background-color: #1c1c1c;
+  border: solid 1px #fff;
+}
+a {
+  text-decoration: none;
+}
+.experience span {
+  font-size: 0.8em;
+}
+
+.description-experience {
+  width: 60%;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+.text-experience {
+  width: 20%;
+}
+
+/* Projects */
+
+#projects {
+  margin-top: 3em;
+  font-weight: bold;
+}
+
+.project{
+    display: flex;
+  justify-content: space-between;
+  margin-top: 4em;
+  padding: 50px;
+  border-radius: 20px;
+}
+.project:hover {
+  background-color: #1c1c1c;
+  border: solid 1px #fff;
+}
+
+.image-project img{
+  width: 80%;
+}
+
+.text-project{
+  text-align: justify;
+}
+.text-project h2{
+  text-align: center;
+  font-weight: bold;
+}
+
+.container-langage{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.langage{
+  background-color: #ffffff;
+  color: #1c1c1c;
+  width: 20%;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 2px 2px 20px rgb(255, 255, 255);
+}
+
+footer{
+  margin-top: 20%;
+  margin-bottom: 7%;
+}
+
+#copyright{
+  opacity: 0.7;
+  margin-top: 2%;
+}
+
+.all-project{
+  text-align: center;
+  margin-top: 5%;
+}
+#all-projects{
+  color: #000000;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.text-project a {
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 5em;
+}
+
+.text-project a p{
+  margin-top: 5%;
+  text-align: end;
+}
+
+
+
+
+/* Pour ingrandir image */
+
+.bigger {
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90vh;
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.7);}
+    to {transform: scale(1);}
+}
+
+body.no-scroll {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width, 0px);
+}
