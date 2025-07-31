@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100v;
+  margin: 0;
+  background-image: url(../img-projects/Mappa-Antica-del-Mondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 5px 2px 5px rgb(255, 255, 255);
+}
+.quiz-box {
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 2px 4px 20px 10px rgba(0, 0, 0, 0.8);
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.quiz-box h2 {
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-size: 22px;
+  text-shadow: 5px 2px 5px rgb(0, 0, 0);
+  -webkit-text-stroke: 1px black;
+}
+
+.answer {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 2px solid #000;
+  background-color: #e0dfdf;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.answer:hover {
+  background-color: #333333;
+  color: white;
+}
+
+#resultat {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  min-height: 24px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 5px;
+  padding: 0 10px;
+
+}
+
+.suivant {
+  background-color: #2e8b57;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  padding: 5px 10px;
+}
+
+#resultat-screen {
+  background-color: green;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 10;
+  border-radius: 20px;
+  color: white;
+  width: 80%;
+  display: none;
+}
+
+@keyframes apparition {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(3);
+  }
+  75% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#container-relative {
+  position: relative;
+  margin-top: 8%;
+}
+
+.return{
+  position: absolute;
+  left: 2%;
+  top: 2%;
+  background-color: #ffffff;
+  padding: 0 50px;
+  border-radius: 20px;
+}
+
+.return p{
+  text-decoration: none;
+  color: #000000;
+}
+
+.return:hover{
+  background-color: #cdcecf;
+}

@@ -10,7 +10,6 @@ document.addEventListener('mousemove', (e) => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Cambiato il selettore per puntare solo alle immagini con classe 'bigger'
     let clickableThumbnails = document.querySelectorAll('.bigger'); 
     
     let modal = document.getElementById('imageModal');
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let closeButton = document.querySelector('.close-button');
     let body = document.body;
 
-    // Funzione per calcolare la larghezza della scrollbar (per evitare lo sbalzo della pagina)
     function getScrollbarWidth() {
         let outer = document.createElement('div');
         outer.style.visibility = 'hidden';

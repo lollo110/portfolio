@@ -8,7 +8,7 @@
 }
 
 main {
-  width:50%;
+  width: 50%;
   margin-top: 3em;
 }
 
@@ -57,10 +57,10 @@ main {
 .container-interne {
   margin-right: 10%;
 }
-#profil{
-    width: 40%;
-    height: 30%;
-    border-radius: 50%;
+#profil {
+  width: 40%;
+  height: 35%;
+  border-radius: 45%;
 }
 
 .flex {
@@ -85,7 +85,7 @@ main {
   cursor: pointer;
 }
 
-.link-important{
+.link-important {
   display: flex;
   justify-content: flex-end;
   gap: 3%;
@@ -158,8 +158,8 @@ a {
   font-weight: bold;
 }
 
-.project{
-    display: flex;
+.project {
+  display: flex;
   justify-content: space-between;
   margin-top: 4em;
   padding: 50px;
@@ -170,25 +170,25 @@ a {
   border: solid 1px #fff;
 }
 
-.image-project img{
+.image-project img {
   width: 80%;
 }
 
-.text-project{
+.text-project {
   text-align: justify;
 }
-.text-project h2{
+.text-project h2 {
   text-align: center;
   font-weight: bold;
 }
 
-.container-langage{
+.container-langage {
   display: flex;
   justify-content: space-around;
   margin-top: 10%;
 }
 
-.langage{
+.langage {
   background-color: #ffffff;
   color: #1c1c1c;
   width: 20%;
@@ -199,21 +199,22 @@ a {
   box-shadow: 2px 2px 20px rgb(255, 255, 255);
 }
 
-footer{
+footer {
   margin-top: 20%;
   margin-bottom: 7%;
 }
 
-#copyright{
-  opacity: 0.7;
-  margin-top: 2%;
+footer span:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 2px;
 }
 
-.all-project{
+.all-project {
   text-align: center;
   margin-top: 5%;
 }
-#all-projects{
+#all-projects {
   color: #000000;
   padding: 10px;
   background-color: #ffffff;
@@ -227,78 +228,181 @@ footer{
   margin-top: 5em;
 }
 
-.text-project a p{
+.text-project a p {
   margin-top: 5%;
   text-align: end;
 }
 
-
-
-
 /* Pour ingrandir image */
 
 .bigger {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
 }
 
 .modal.active {
-    display: flex;
-    opacity: 1;
-    pointer-events: auto;
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 90vh;
-    animation-name: zoom;
-    animation-duration: 0.3s;
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90vh;
+  animation-name: zoom;
+  animation-duration: 0.3s;
 }
 
 .close-button {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    color: #f1f1f1;
-    font-size: 50px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
-    z-index: 10000;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 10000;
 }
 
 .close-button:hover,
 .close-button:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @keyframes zoom {
-    from {transform: scale(0.7);}
-    to {transform: scale(1);}
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 body.no-scroll {
-    overflow: hidden;
-    padding-right: var(--scrollbar-width, 0px);
+  overflow: hidden;
+  padding-right: var(--scrollbar-width, 0px);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .container-interne {
+    width: 100%;
+  }
+  .presentation {
+    position: static;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+  }
+  #profil {
+    height: 50%;
+    width: 25%;
+  }
+  .img-langage {
+    margin: auto;
+    justify-content: space-around;
+  }
+  .ligne {
+    display: none;
+  }
+  .flex {
+    display: block;
+  }
+  main {
+    margin: auto;
+    width: 70%;
+  }
+  footer {
+    margin-bottom: 0;
+    padding-bottom: 10%;
+  }
+  .description {
+    margin-top: 5%;
+  }
+  #experience{
+    text-align: center;
+    margin-top: 10%;
+  }
+  #projects{
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-langage {
+    gap: 15%;
+  }
+  .description {
+    margin-top: 55%;
+  }
+  #profil {
+    width: 30%;
+    height: 40%;
+  }
+  .project{
+    padding: 20px;
+    display: block;
+  }
+  .experience{
+  padding: 20px;
+  display: block;
+  }
+  .image-project {
+    text-align: center;
+  }
+.text-experience {
+  width: 100%;
+  text-align: center;
+}
+.description-experience{
+  width: 100%;
+  margin-top: 5%;
+}
+main{
+  width: 80%;
+}
+.text-project h2{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+}
+
+@media (max-width: 425px){
+  #profil{
+    width: 50%;
+  }
+  .img-langage{
+    gap: 4.5%;
+  }
+  footer{
+    text-align: center;
+  }
+  .link-important{
+    margin-top: 5%;
+    justify-content: center;
+  }
 }
