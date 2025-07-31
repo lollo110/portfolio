@@ -343,11 +343,11 @@ body.no-scroll {
   .description {
     margin-top: 5%;
   }
-  #experience{
+  #experience {
     text-align: center;
     margin-top: 10%;
   }
-  #projects{
+  #projects {
     text-align: center;
   }
 }
@@ -363,45 +363,45 @@ body.no-scroll {
     width: 30%;
     height: 40%;
   }
-  .project{
+  .project {
     padding: 20px;
     display: block;
   }
-  .experience{
-  padding: 20px;
-  display: block;
+  .experience {
+    padding: 20px;
+    display: block;
   }
   .image-project {
     text-align: center;
   }
-.text-experience {
-  width: 100%;
-  text-align: center;
-}
-.description-experience{
-  width: 100%;
-  margin-top: 5%;
-}
-main{
-  width: 80%;
-}
-.text-project h2{
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-}
-
-@media (max-width: 425px){
-  #profil{
-    width: 50%;
-  }
-  .img-langage{
-    gap: 4.5%;
-  }
-  footer{
+  .text-experience {
+    width: 100%;
     text-align: center;
   }
-  .link-important{
+  .description-experience {
+    width: 100%;
+    margin-top: 5%;
+  }
+  main {
+    width: 80%;
+  }
+  .text-project h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 425px) {
+  #profil {
+    width: 50%;
+  }
+  .img-langage {
+    gap: 4.5%;
+  }
+  footer {
+    text-align: center;
+  }
+  .link-important {
     margin-top: 5%;
     justify-content: center;
   }
