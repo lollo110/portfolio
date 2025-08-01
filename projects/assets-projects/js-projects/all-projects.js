@@ -8,3 +8,16 @@ document.addEventListener("mousemove", (e) => {
 
 // Arrow to left
 
+let div = document.querySelector(".return");
+let icone = document.querySelector("#icone");
+
+div.addEventListener("mouseover", function () {
+  icone.style.animation = "none";
+  void icone.offsetWidth;
+  icone.style.animation = "slide-out 1s forwards";
+});
+div.addEventListener("mouseout", function () {
+  icone.style.animation = "none";
+  void icone.offsetWidth;
+  icone.style.animation = "slide-in 1s forwards";
+});
