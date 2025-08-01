@@ -133,3 +133,20 @@ h1{
 .return:hover{
   background-color: #cdcecf;
 }
+.return-2{
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  background-color: #ffffff;
+  padding: 0 50px;
+  border-radius: 20px;
+}
+
+.return-2 p{
+  text-decoration: none;
+  color: #000000;
+}
+
+.return-2:hover{
+  background-color: #cdcecf;
+}

@@ -1,0 +1,58 @@
+h1 {
+  background-color: #d8cab8;
+  padding: 1em 0;
+  text-align: center;
+}
+header section {
+  margin-bottom: 1em;
+}
+.center {
+  text-align: center;
+  margin: 1em 0 3em 0;
+}
+.buyed {
+  display: flex;
+  background-color: #d8cab8;
+  margin: 1em 12em;
+  gap: 2em;
+  align-items: center;
+}
+.img img {
+  width: 20vh;
+  height: 25vh;
+}
+.text {
+  flex: 2;
+}
+.text p:nth-of-type(4) {
+  text-align: end;
+}
+.end-2 {
+  text-align: end;
+  margin: 3em 1em 3em 0;
+}
+.bott {
+  text-align: center;
+  margin: 2em 0;
+}
+.button {
+  background-color: #d8cab8;
+  padding: 20px 60px;
+  border-radius: 20px;
+}
+.pay{
+    text-align: center;
+    margin: 3em 0;
+}
+.pay h2{
+    margin-bottom: 1em;
+}
+.pay img{
+    width: 40%;
+}
+
+@media (max-width: 768px){
+    .buyed{
+        margin: 1em 2em;
+    }
+}

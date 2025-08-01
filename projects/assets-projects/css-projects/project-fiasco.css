@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    
+    
+}
+.container{
+    width: 100%;
+    font-family: "Oswald", sans-serif;
+    background-color: black;
+    color: #fff;
+}
+.corsivo{
+    font-family: "Great Vibes", cursive;
+    color: orange;
+}
+.img-back{
+
+    text-align: center;
+    margin: 0 3em;
+    position: relative;
+    z-index: 0;
+
+}
+.img-back::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img-projects/eggs.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+.img-back nav ul li:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.titre h2:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.img-back a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.nav nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    margin: 2em 2em 0 0;
+}
+.nav nav ul li:last-child{
+    border: solid 1px orange;
+    padding: 15px;
+} 
+.titre{
+    margin: 2em 0 0 2em;
+}
+.text-header h2{
+    margin: 2em 0 2em 0;
+    color: orange;
+    font-weight: lighter;
+    font-size: 3em;
+}
+.text-header h1{
+    margin: 1.8em 0 1.8em 0;
+    color: #fff;
+    font-size: 5em;    
+}
+.text-header h3{
+    margin: 2em 0 0 0;
+    color: #fff; 
+    opacity: 0.8; 
+    padding-bottom: 6em;
+    font-size: 2em;  
+    font-weight: lighter;
+}
+.img-big{
+    width: 50%;
+    margin: -1em auto 0 auto;
+}
+.img-big-small{
+    display: flex;
+}
+.image{
+    border: solid 1px rgba(255, 165, 0, 0.5);
+    height: 26em;
+    width: 120%;
+    position: relative;
+}
+.image img{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+.image-2{
+    border: solid 1px rgba(255, 165, 0, 0.5);
+    height: 26em;
+    width: 120%;
+    position: relative;
+}
+.image-2 img{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+.text{
+    margin: 2em 2em 0 2em;
+}
+.text h3{
+    font-family: "Great Vibes", cursive;
+    color: orange;
+    font-size: 2em;
+    font-weight: lighter;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+.text h2{
+    margin-bottom: 1em;
+}
+.text p{
+    margin-bottom: 2em;
+}
+.text a{
+    text-decoration: none;
+    color: orange;
+}
+.menu{
+    text-align: center;
+    width: 60%;
+    margin: 8em auto;
+}
+.menu h3{
+    font-family: "Great Vibes", cursive;
+    color: orange;
+    font-weight: lighter;
+    font-size: 2em;
+    margin: 1em 0;    
+}
+.menu h2{
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+.menu p{
+    margin: 0 2em;
+}
+.menu nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 4em;
+    justify-content: center;
+    margin-top: 4em;
+}
+.menu nav ul li{
+    opacity: 0.5;
+    letter-spacing: 0.1em;
+}
+.dish-price{
+    width: 60%;
+    margin: auto;
+}
+.top{
+    display: flex;
+}
+.bottom{
+    display: flex;
+    margin: 8em 0;
+}
+.img-left{
+    display: flex;
+}
+.img-right{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.text-left {
+    margin: 0 3em;
+} 
+.text-right {
+    margin: 0 3em;
+}
+.text-left h4{
+    margin-bottom: 1em;
+} 
+.text-right h4{
+    margin-bottom: 1em;
+} 
+.p-inside-left{
+    margin-bottom: 1em;
+    line-height: 2em;
+    text-align: start;
+    opacity: 0.5;
+    letter-spacing: 3px;
+    font-size: 0.8em;
+} 
+.p-inside-right{
+    margin-bottom: 1em;
+    line-height: 2em;
+    text-align: end;
+    opacity: 0.5;
+    letter-spacing: 3px;
+    font-size: 0.8em;
+}
+.price{
+    color: orange;
+    font-size: 3em;
+    font-family: "Great Vibes", cursive;
+}
+.img-4 img{
+    width: 12em;
+    height: 90%;
+}
+.chef{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+.img-chef{
+    margin-left: 10em;
+}
+.text-2{
+    margin: 2em 2em 0 2em;
+}
+.text-2 h3{
+    font-family: "Great Vibes", cursive;
+    color: orange;
+    font-size: 2em;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+.text-2 h2{
+    margin-bottom: 1em;
+}
+.opacity{
+    margin-bottom: 4em;
+    opacity: 0.5;
+}
+.text-2 a{
+    text-decoration: none;
+    color: orange;
+}
+.reservation{
+    background-image: url(../img-projects/reservation.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0 3em;
+    padding-bottom: 13em;
+}
+.reservation h2{
+    color: orange;
+    font-family: "Great Vibes", cursive;
+    font-weight: lighter;
+    padding-top: 1.5em;
+    font-size: 3em;
+}
+.reservation h3{
+    margin: 2em 0;
+}
+.reservation p{
+    opacity: 0.5;
+    margin: 3em 25em;
+}
+.box{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.input{
+    margin-bottom: 4em;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+select{
+    cursor: pointer;
+}
+button{
+    background-color: orange;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.prima-map{
+    width: 60%;
+    margin: 2em auto;
+    text-align: end;
+}
+.prima-map h3{
+    font-family: "Great Vibes", cursive;
+    color: orange;
+    font-weight: lighter;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.prima-map h2{
+    margin-bottom: 1em;
+}
+.prima-map p{
+    margin-left: 4em;
+    margin-bottom: 2em;
+    opacity: 0.5;
+}
+
+.date-p{
+    display: flex;
+}
+.date-p p{
+    margin-left: 0;
+}
+.date-p h2{
+    font-size: 1.2em;
+}
+.prima-map a{
+    text-decoration: none;
+    color: orange;
+    opacity: 1;
+}
+.prima-map h4{
+    font-weight: lighter;
+}
+.map{
+    width: 90%;
+    margin: 0 auto;
+}
+.map iframe{
+    width: 100%;
+    display: block;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+
+}
+footer{
+    background-image: url(../img-projects/splash.png);
+    background-repeat: no-repeat;
+    background-color: rgb(71, 71, 71);
+    background-position: bottom right;
+    margin-top: 0;
+}
+.footer-small{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 auto;
+}
+.footer-small h2{
+    color: orange;
+    margin: 3em 0;
+}
+.footer-small p{
+    opacity: 0.5;
+    line-height: 1.5em;
+    margin-top: 4em;
+}
+.padding{
+    padding-bottom: 1em;
+}
+.menu nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.return{
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  background-color: #ffffff;
+  padding: 15px 50px;
+  border-radius: 20px;
+  z-index: 1000;
+}
+
+.return p{
+  text-decoration: none;
+  color: #000000;
+}
+
+.return:hover{
+  background-color: #cdcecf;
+}
+
+@media (max-width: 1024px){
+
+    .img-left{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-right{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dish-price{
+        margin: 2em 0;
+        width: 100%;
+    }
+    .chef{
+        flex-direction: column;
+        width: 90%;
+    }
+    .text-2{
+        margin: 2em 1em;
+    }
+    .img-chef{
+        margin: 0 auto;
+    }
+    .nav nav ul{
+        display: none;
+    }
+    .img-big{
+        width: 90%;
+    }
+    .price{
+        text-align: center;
+    }
+    .reservation p{
+        margin: 3em 0;
+    }
+}
+@media (max-width: 768px){
+    .img-big-small{
+        flex-direction: column;
+    }
+    .image{
+        width: 50%;
+        margin: auto;
+    }
+    .text{
+        text-align: center;
+    }
+    .image-2{
+        width: 50%;
+        margin: auto;
+    }
+    .top{
+        flex-direction: column;
+        text-align: center;
+    }
+    .bottom{
+        flex-direction: column;
+        text-align: center;
+    }
+    .img-right{
+        margin-top: 2em;
+    }
+    .chef{
+        text-align: center;
+    }
+    .input{
+        flex-direction: column;
+    }
+    .footer h2{
+        font-size: 1em;
+    }
+    .menu nav ul{
+      gap: 1em;
+    }
+    .img-4{
+        margin-bottom: 2em;
+    }
+    .footer p{
+        display: none;
+        
+    }
+    .footer-small .padding{
+        display: block;
+    }
+}
+@media (max-width:425px){
+    .image{
+        height: 18em;
+    } 
+    .image-2{
+        height: 18em;
+    }
+    .menu nav ul{
+      flex-direction: column;
+    }
+    .img-chef img{
+        width: 50%;
+    }
+    .img-back{
+        width: 100%;
+        margin: 0;
+    }
+    .img-back h1{
+        font-size: 3em;  
+    }
+    .footer{
+        flex-direction: column;
+    }
+        .footer-small .padding{
+        display: none;
+    }
+
+}

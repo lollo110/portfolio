@@ -255,6 +255,23 @@
 .return:hover{
   background-color: #353434;
 }
+.return-2:hover{
+  background-color: #353434;
+}
+
+.return-2{
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  background-color: #000000;
+  padding: 15px 50px;
+  border-radius: 20px;
+}
+.return-2 p{
+  text-decoration: none;
+  color: #ffffff;
+}
+
 
 
 @media (max-width: 768px) {

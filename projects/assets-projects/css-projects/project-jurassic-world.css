@@ -219,6 +219,24 @@ footer{
 .return:hover{
   background-color: #cdcecf;
 }
+.return-2{
+  position: absolute;
+  right: 3%;
+  top: 2%;
+  background-color: #ffffff;
+  padding: 15px 50px;
+  border-radius: 20px;
+  margin-top: 1%;
+}
+
+.return-2 p{
+  text-decoration: none;
+  color: #000000;
+}
+
+.return-2:hover{
+  background-color: #cdcecf;
+}
 
 
 @media (max-width: 1024px){
