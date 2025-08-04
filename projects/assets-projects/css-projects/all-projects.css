@@ -177,4 +177,7 @@ footer{
         margin: auto;
         width: 80%;
     }
+        .category-lang .langage:not(:first-of-type){
+        margin: 10px 0;
+    }
 }
