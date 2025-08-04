@@ -97,3 +97,14 @@ ul li {
   background-color: #353434;
 }
 
+@media (max-width: 1024px){
+  .return{
+    top: auto;
+    bottom: 5%;
+  }
+  .return-2{
+    top: auto;
+    bottom: 5%;
+  }
+}
+

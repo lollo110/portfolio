@@ -262,7 +262,7 @@
 .return-2{
   position: absolute;
   left: 2%;
-  top: 10%;
+  top: 7%;
   background-color: #000000;
   padding: 15px 50px;
   border-radius: 20px;
@@ -272,7 +272,30 @@
   color: #ffffff;
 }
 
+@media (max-width: 1024px){
+    .structure-int{
+        width: 80%;
+    }
+    .icone-footer{
+        gap: 6em;
+    }
+    .structure nav ul li::before{
+        left: -20%;
+    }
+    .structure nav ul li{
+        font-size: 0.8em;
+    }
 
+    .return{
+      left: 40%;
+      top: 13%;
+    }
+    .return-2{
+      top: 13%;
+      left: 56%;
+      right: auto;
+    }
+}
 
 @media (max-width: 768px) {
   .nav-bar {
@@ -369,21 +392,19 @@
     justify-content: center;
     gap: 3.5em;
   }
+
+  .return{ 
+    left: 5%;
+    top: 2%;
+   
+  }
+  .return-2{
+    left: auto;
+    right: 2%;
+    top: 2%;
+  }
 }
-@media (min-width: 769px) and (max-width: 1024px){
-    .structure-int{
-        width: 80%;
-    }
-    .icone-footer{
-        gap: 6em;
-    }
-    .structure nav ul li::before{
-        left: -20%;
-    }
-    .structure nav ul li{
-        font-size: 0.8em;
-    }
-}
+
 @media (max-width: 425px){
     .texte-main p{
         font-size: 1em;
@@ -401,5 +422,14 @@
     }
         .structure nav ul li{
         font-size: 0.8em;
+    }
+
+    .return{
+      top: 1%;
+      padding: 10px;
+    }
+    .return-2{
+      top: 1%;
+      padding: 10px;
     }
 }

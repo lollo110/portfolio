@@ -154,10 +154,10 @@ h1{
 @media (max-width: 768px){
   .return{
     top: auto;
-    bottom: 0;
+    bottom: 2%;
   }
   .return-2{
     top: auto;
-    bottom: 0;   
+    bottom: 2%;   
   }
 }
