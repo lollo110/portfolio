@@ -388,7 +388,7 @@ body.no-scroll {
     margin-top: 55%;
   }
   #profil {
-    width: 35%;
+    width: 40%;
     height: 40%;
   }
   .project {
@@ -421,7 +421,7 @@ body.no-scroll {
 
 @media (max-width: 425px) {
   #profil {
-    width: 45%;
+    width: 40%;
     height: 40%;
   }
   .img-langage {
