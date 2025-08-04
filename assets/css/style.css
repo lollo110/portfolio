@@ -5,6 +5,11 @@
   font-weight: 300;
   color: #f5f5f5;
   margin: 0;
+ 
+}
+
+body{
+   background-color: #111010;
 }
 
 main {
@@ -342,8 +347,8 @@ body.no-scroll {
     padding-top: 5%;
   }
   #profil {
-    height: 50%;
-    width: 25%;
+    height: 40%;
+    width: 28%;
   }
   .img-langage {
     margin: auto;
@@ -383,7 +388,7 @@ body.no-scroll {
     margin-top: 55%;
   }
   #profil {
-    width: 25%;
+    width: 35%;
     height: 40%;
   }
   .project {
@@ -417,6 +422,7 @@ body.no-scroll {
 @media (max-width: 425px) {
   #profil {
     width: 45%;
+    height: 40%;
   }
   .img-langage {
     gap: 4.5%;
