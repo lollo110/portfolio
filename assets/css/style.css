@@ -388,7 +388,7 @@ body.no-scroll {
     margin-top: 30%;
   }
   #profil {
-    width: 70%;
+    width: 50%;
     height: 35%;
   }
   .project {
@@ -421,7 +421,7 @@ body.no-scroll {
 
 @media (max-width: 425px) {
   #profil {
-    width: 40%;
+    width: 70%;
     height: 35%;
 
   }
