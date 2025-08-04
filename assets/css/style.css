@@ -345,6 +345,7 @@ body.no-scroll {
     width: 100%;
     text-align: center;
     padding-top: 5%;
+    margin-bottom: -10%;
   }
   #profil {
     height: 40%;
@@ -384,12 +385,9 @@ body.no-scroll {
   .img-langage {
     gap: 15%;
   }
-  .description {
-    margin-top: 30%;
-  }
   #profil {
-    width: 50%;
-    height: 35%;
+    width: 40%;
+    height: 32%;
   }
   .project {
     padding: 20px;
@@ -421,9 +419,12 @@ body.no-scroll {
 
 @media (max-width: 425px) {
   #profil {
-    width: 70%;
+    width: 65%;
     height: 35%;
+  }
 
+  .description{
+    margin-top: 20%;
   }
   .img-langage {
     gap: 4.5%;
