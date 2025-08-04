@@ -386,12 +386,9 @@ body.no-scroll {
     gap: 15%;
   }
   #profil {
-    width: 40%;
+    width: 35%;
     height: 32%;
   }
-  /* .presentation{
-    margin-bottom: -30%;
-  } */
   .project {
     padding: 20px;
     display: block;
