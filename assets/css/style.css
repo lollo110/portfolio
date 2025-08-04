@@ -345,7 +345,7 @@ body.no-scroll {
     width: 100%;
     text-align: center;
     padding-top: 5%;
-    margin-bottom: -40%;
+    /* margin-bottom: -30%; */
   }
   #profil {
     height: 40%;
@@ -388,6 +388,9 @@ body.no-scroll {
   #profil {
     width: 40%;
     height: 32%;
+  }
+  .presentation{
+    margin-bottom: -30%;
   }
   .project {
     padding: 20px;
