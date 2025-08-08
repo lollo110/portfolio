@@ -115,3 +115,37 @@ background:linear-gradient( to top, rgb(92, 63, 48), rgb(197, 167, 135) );
  line-height: 25px;
  cursor: pointer;
 }
+
+@media (max-width: 1024px){
+    .bijoux-section1{
+        width: 80%;
+        margin: 1em auto;
+        padding: 0;
+    }
+    .bijoux-section{
+        width: 80%;
+        margin: 1em auto;
+        padding: 0;
+    }
+
+.product-card1{
+    width: 70%;
+    margin: 0 auto;
+}
+.product-card{
+    width: 70%;
+    margin: 0 auto;
+}
+
+}
+
+@media (max-width: 425px){
+    .bijoux-section1{
+        margin: 1em 0;
+    }
+    .bijoux-section{
+        margin: 1em 0;
+    }
+}
+
+

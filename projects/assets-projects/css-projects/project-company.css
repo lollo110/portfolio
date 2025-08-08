@@ -12,12 +12,13 @@ body{
 .image {
     height: 600px;
     background-image: url(../img-projects/banner-buisnessman.jpg);
+    background-size: cover;
     
 }
 .return{
   position: absolute;
-  left: 20%;
-  top: 4%;
+  left: 2%;
+  top: 30%;
   background-color: #ffffff;
   padding: 5px 50px;
   border-radius: 20px;
@@ -33,6 +34,11 @@ body{
   background-color: #cdcecf;
 }
 
+@media (max-width: 425px){
+  .return{
+    top: 45%;
+  }
+}
 
 
 

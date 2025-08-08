@@ -204,7 +204,7 @@ footer{
 .return{
   position: absolute;
   left: 2%;
-  top: 2%;
+  top: 10%;
   background-color: #ffffff;
   padding: 15px 50px;
   border-radius: 20px;
@@ -222,7 +222,7 @@ footer{
 .return-2{
   position: absolute;
   right: 3%;
-  top: 2%;
+  top: 10%;
   background-color: #ffffff;
   padding: 15px 50px;
   border-radius: 20px;
@@ -266,6 +266,13 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+
+    .return{
+        top: 18%;
+    }
+    .return-2{
+        top: 18%;
+    }
     
 }
 
@@ -304,6 +311,31 @@ footer{
     footer{
         padding-top: 5em;
     }
+    .image-small img{
+        width: 10%;
+    }
+    .center{
+        width: 70%;
+    }
+    .center img{
+        width: 100%;
+    }
+
+    .bottom-right img{
+        width: 60%;
+    }
+    .bottom-right{
+        width: fit-content;
+        text-align: end;
+    }
+
+    .return{
+        padding: 10px;
+    }
+
+    .return-2{
+        padding: 10px;
+    }
 }
 @media (max-width: 425px){
     .center{
@@ -339,5 +371,17 @@ footer{
     }
     .right{
         margin-top: 5em;
+    }
+
+    .center {
+        left: 25%;
+    }
+
+    .return{
+        top: 50%;
+    }
+    .return-2{
+        top: 50%;
+        z-index: 1000;
     }
 }

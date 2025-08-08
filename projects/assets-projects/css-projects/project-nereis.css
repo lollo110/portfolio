@@ -249,10 +249,10 @@ body {
   .liste nav ul {
     display: flex;
     list-style-type: none;
-    gap: 10%;
+    gap: 12%;
     margin-left: -12em;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
   }
   .search-2 {
     display: none;
@@ -304,4 +304,10 @@ body {
     margin-left: 1em;
     width: 15em;
     }
+}
+
+@media (max-width: 425px){
+  .logo-img-footer img{
+    width: 200%;
+  }
 }
