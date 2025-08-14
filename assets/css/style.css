@@ -40,7 +40,7 @@ main {
   left: 2%;
   width: 35%;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 2s ease;
 }
 .presentation h1 {
   margin-bottom: 1em;
