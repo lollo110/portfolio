@@ -1,3 +1,19 @@
+// opacity
+window.addEventListener("load", () => {
+  let sidebar = document.querySelector(".presentation");
+  let content = document.querySelector(".description");
+  let content2 = document.querySelector(".experience");
+
+  // Mostra la sidebar
+  sidebar.style.opacity = "1";
+
+  // Dopo 1 secondo, mostra il resto
+  setTimeout(() => {
+    content.style.opacity = "1";
+    content2.style.opacity = "1";
+  }, 500);
+});
+
 // Cursor qui suive avec lumiere
 let spotlight = document.querySelector(".spotlight");
 
